@@ -1,6 +1,6 @@
 from module1 import *
 while True:
-    print('Z=arithmetic, X= is_year_leap,C=square,V=season,A=xor_cipher')
+    print('Z=arithmetic, X=is_year_leap, C=square, V=season, N=is_prime, M=date, A=xor_cipher')
     v=input()
     if v.upper()=='Z':
         arv1=float(input('Arv1:'))
@@ -37,4 +37,8 @@ while True:
         rezult=is_prime(a)
         print(rezult)
     elif v.upper()=='M':
-        pass
+        d=int(input('Sisesta päev: '))
+        m=int(input('Sisesta kuu: '))
+        y=int(input('Sisesta aasta: '))
+        rezult=date(d,m,y)
+        print(rezult)

@@ -65,7 +65,63 @@ def is_prime(a:int):
     while a%z!=0:
         z+1
     return z==a
-def date(d:int,y:int,m:int):
+def date(d:int,m:int,y:int):
+    if type(y/4)==int:
+        if m==1 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==2 and d<29:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==3 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==4 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==5 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==6 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==7 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==8 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==9 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==10 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==11 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==12 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        else:
+            print('Viga')
+    elif type(y/4)==float:
+        if m==1 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==2 and d<28:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==3 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==4 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==5 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==6 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==7 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==8 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==9 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==10 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==11 and d<31:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        elif m==12 and d<32:
+            print(f'Päev:{d} /nKuu:{m} /nAasta:{y}')
+        else:
+            print('Viga')
+    else:
+        print('Viga')
 
 
 
